@@ -3,6 +3,5 @@ export async function Fetch(url = '', data) {
     method: 'POST',
     body: data,
   })
-  const result = await response.json();
-  return result
+ return await response.json();
 }
